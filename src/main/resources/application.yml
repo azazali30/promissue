@@ -7,8 +7,13 @@ micronaut:
         enabled: true
         descriptions: true
         step: PT1M
+        port: 8081
     enabled: true
 netty:
   default:
     allocator:
       max-order: 3
+endpoints:
+  prometheus:
+    enabled: true
+    sensitive: false
